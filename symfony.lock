@@ -26,6 +26,24 @@
             "migrations/.gitignore"
         ]
     },
+    "ecphp/cas-bundle": {
+        "version": "dev-master"
+    },
+    "loophp/psr-http-message-bridge-bundle": {
+        "version": "1.2.0"
+    },
+    "loophp/psr17": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "3eba84e2a18dbc40cc5b3516863fe5808c5aa10d"
+        },
+        "files": [
+            "config/packages/loophp_psr17.yaml"
+        ]
+    },
     "nyholm/psr7": {
         "version": "1.8",
         "recipe": {

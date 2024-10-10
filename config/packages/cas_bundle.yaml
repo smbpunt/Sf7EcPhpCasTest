@@ -1,0 +1,38 @@
+cas:
+  base_url: '%env(CAS_URL)%'
+  protocol:
+    login:
+      path: /login
+      allowed_parameters:
+        - service
+        - renew
+        - gateway
+      default_parameters:
+        service: app_homepage
+    serviceValidate:
+      path: /serviceValidate
+      allowed_parameters:
+        - format
+        - service
+        - ticket
+      default_parameters:
+        format: XML
+    logout:
+      path: /logout
+      allowed_parameters:
+        - service
+      default_parameters:
+        service: app_homepage
+    proxy:
+      path: /proxy
+      allowed_parameters:
+        - targetService
+        - pgt
+    proxyValidate:
+      path: /proxyValidate
+      allowed_parameters:
+        - format
+        - service
+        - ticket
+      default_parameters:
+        format: XML
